@@ -1,7 +1,7 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
-import BannerImg from "../../assets/Banner.svg";
-import UnionImg from "../../assets/Union.svg";
+import BannerImg from "@assets/Banner.svg";
+import UnionImg from "@assets/Union.svg";
 
 import {
   BannerSection,
@@ -39,15 +39,8 @@ const BannerItem = ({ title, description }: BannerItemPropTypes) => {
 };
 
 const Banner = () => {
-  return <div>hi</div>;
-};
-
-export default Banner;
-
-/*
-
-
-<BannerSection>
+  return (
+    <BannerSection>
       <BannerBox>
         <UnionImage src={UnionImg} alt="UnionImg" />
         <Container>
@@ -60,5 +53,7 @@ export default Banner;
         </Container>
       </BannerBox>
     </BannerSection>
+  );
+};
 
-*/
+export default Banner;
