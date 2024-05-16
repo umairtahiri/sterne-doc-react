@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { HeaderContainer, NavItemsContainer } from "./styles";
-import CompanyLogo from "@assets/Logo.svg";
+import CompanyLogo from "../../assets/Logo.svg";
 import { Link } from "react-router-dom";
 import { Img } from "react-image";
 import Button from "@mui/material/Button";

@@ -1,7 +1,7 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
-import BannerImg from "@assets/Banner.svg";
-import UnionImg from "@assets/Union.svg";
+import BannerImg from "../../assets/Banner.svg";
+import UnionImg from "../../assets/Union.svg";
 
 import {
   BannerSection,

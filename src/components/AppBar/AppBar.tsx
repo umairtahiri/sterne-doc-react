@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
-import logo from "@assets/logo.svg";
+import logo from "../../assets/logo.svg";
 
 export const AppBar = () => {
   return (

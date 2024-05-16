@@ -61,10 +61,10 @@ export const FaqAccordion = styled(Accordion)`
 
     &.Mui-expanded {
       margin: 16px 0;
-      margin-top: 16px !important;
-      margin-bottom: 16px !important;
+      margin-top: 16px;
+      margin-bottom: 16px;
       background: #fafafa;
-      border-radius: 15px !important;
+      border-radius: 15px;
       max-height: none;
     }
 

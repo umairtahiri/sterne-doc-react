@@ -1,10 +1,10 @@
 import React from "react";
 import { Stack, Box, Grid } from "@mui/material";
-import Frame1811 from "@assets/Badge.svg";
-import Frame1812 from "@assets/Hand.svg";
-import Frame1813 from "@assets/Bag.svg";
-import Frame207 from "@assets/Frame207.svg";
-import Vector from "@assets/Vector.svg";
+import Frame1811 from "../../assets/Badge.svg";
+import Frame1812 from "../../assets/Hand.svg";
+import Frame1813 from "../../assets/Bag.svg";
+import Frame207 from "../../assets/Frame207.svg";
+import Vector from "../../assets/Vector.svg";
 
 import {
   RemoveNegativeSection,

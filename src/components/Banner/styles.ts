@@ -44,7 +44,7 @@ export const ContainerGrid = styled(Box)`
 `;
 
 export const Title = styled(Typography)`
-  font-size: 60px !important;
+  font-size: 60px;
 
   letter-spacing: -0.02em;
   text-align: center;

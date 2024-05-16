@@ -1,10 +1,10 @@
 import React from "react";
 import { Stack, Box, Grid } from "@mui/material";
 
-import Frame01 from "@assets/Frame-01.svg";
-import Frame02 from "@assets/Frame-02.svg";
-import Frame03 from "@assets/Frame-03.svg";
-import Star from "@assets/Star.svg";
+import Frame01 from "../../assets/Frame-01.svg";
+import Frame02 from "../../assets/Frame-02.svg";
+import Frame03 from "../../assets/Frame-03.svg";
+import Star from "../../assets/Star.svg";
 import {
   AblaufSection,
   AblaufContainer,
