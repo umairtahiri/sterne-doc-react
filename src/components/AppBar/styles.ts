@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
 export const Header = styled(Box)`
+  font-family: Macan;
   height: 77px;
   position: sticky;
   top: 0;
@@ -16,10 +17,13 @@ export const Header = styled(Box)`
 `;
 
 export const NavBar = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-text: center;
   height: 45px;
   padding: 16px 160px;
   font-size: 16px;
-
   gap: 10px;
 
   a {
@@ -32,6 +36,9 @@ export const NavBar = styled(Box)`
 `;
 
 export const LogoImage = styled(Img)`
+  display: flex;
+  justify-content: center;
+align-items: center
   width: 202px;
   height: 45px;
 
@@ -46,7 +53,7 @@ export const CustomButton = styled(Button)`
   border-radius: 12px;
   boder: 1px solid #0f2fb8;
   color: #ffffff;
-  background: #0f2fb8;  
+  background:#0F2FB8;  
   &:hover {
     background: #0f2fd8;
   }

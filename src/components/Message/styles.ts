@@ -17,6 +17,11 @@ export const InfoBox = styled(Box)`
   border: 1px solid #8797db;
   background: #dfe3f6;
   color: #0a1f7b;
+
+  @media screen and (max-width: 768px) {
+    width: 348px;
+    padding: 24px;
+  }
 `;
 
 export const Title = styled(Typography)`

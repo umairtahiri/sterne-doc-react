@@ -8,6 +8,7 @@ import Star from "../../assets/Star.svg";
 import {
   AblaufSection,
   AblaufContainer,
+  ItemContainer,
   Title,
   ItemTitle,
   Description,
@@ -44,13 +45,13 @@ const ablaufItems = [
 
 const AblaufItem = ({ title, description, countImg }: AblaufItemPropTypes) => {
   return (
-    <Stack direction={{ xs: "column", md: "row" }} columnGap={2}>
-      <CountImage width={200} src={countImg} alt="Frame-01" />
+    <ItemContainer columnGap={2}>
+      <CountImage width={100} src={countImg} alt="Frame-01" />
       <Box>
         <ItemTitle>{title}</ItemTitle>
         <Description>{description}</Description>
       </Box>
-    </Stack>
+    </ItemContainer>
   );
 };
 
@@ -69,14 +70,16 @@ const Ablauf = () => {
           columnGap={2}
         >
           <Grid item xs={12} sm={12} md={12} lg={6}>
-            {ablaufItems.map((item) => (
+            {ablaufItems.map((item, index) => (
               <AblaufItem
+                key={index}
                 title={item?.title}
                 description={item?.description}
                 countImg={item?.countImg}
               />
             ))}
           </Grid>
+
           <StarImage src={Star} height={450} alt="Star" />
         </Grid>
       </AblaufContainer>

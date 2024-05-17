@@ -4,7 +4,25 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { Img } from "react-image";
 
+import Ellipse from "../../assets/Ellipse.svg";
+
+export const ImageContainer = styled.div`
+  background-image: url(${Ellipse.src});
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    top: 590px;
+    width: 100%;
+    height: 100px;
+  }
+`;
 export const BannerSection = styled(Box)`
+  font-family: Macan;
   height: 746px;
   padding: 64px 24px;
   @media screen and (max-width: 768px) {
@@ -14,11 +32,9 @@ export const BannerSection = styled(Box)`
 
 export const BannerBox = styled(Box)`
   display: flex;
-
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  color: #0a1f7b;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -45,10 +61,14 @@ export const ContainerGrid = styled(Box)`
 
 export const Title = styled(Typography)`
   font-size: 60px;
-
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-align: center;
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 40px;
+  color: #0a1f7b;
 
   @media screen and (max-width: 768px) {
     font-size: 48px;
@@ -97,7 +117,7 @@ export const BannerImage = styled(Img)`
 
 export const UnionImage = styled(Img)`
   position: absolute;
-  top: 100px;
+  top: 120px;
   width: 100%;
   object-fit: contain;
 

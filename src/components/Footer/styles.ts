@@ -14,7 +14,9 @@ export const FooterSection = styled(Box)`
 `;
 
 export const FooterBox = styled(Box)`
-  padding: 24px;
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+  }
 `;
 
 export const Description = styled(Typography)`
@@ -23,9 +25,10 @@ export const Description = styled(Typography)`
 
   @media screen and (max-width: 768px) {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    text-align: center;
     font-size: 14px;
+    padding: 24px;
   }
 `;
 
@@ -35,9 +38,6 @@ export const Links = styled(Typography)`
   margin-right: 16px;
 
   @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 14px;
   }
 `;
@@ -54,8 +54,19 @@ export const Title = styled(Typography)`
   }
 `;
 
+export const LogoImage = styled(Img)`
+  width: 180px;
+  height: 45px;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: auto;
+  }
+`;
+
 export const MailInfo = styled(Typography)`
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   color: #4d5761;
 
@@ -65,34 +76,51 @@ export const MailInfo = styled(Typography)`
 `;
 
 export const PhoneInfo = styled(Typography)`
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   color: #4d5761;
-  margin-bottom: 64px;
 
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
-export const LogoImage = styled(Img)`
-  width: 180px;
-  height: 45px;
-`;
-
 export const IconImage = styled(Img)`
-  padding: 4px 8px 0px 2px;
+  width: 20px;
+  height: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-export const Input = styled.input`
-  position: relative;
+export const InputBox = styled(Box)`
+  display: flex;
   width: 314px;
   height: 44px;
+  font-size: 16px;
   border-radius: 80px;
   color: #ffffff;
   border: 1px solid #e5e7eb;
   box-shadow: 0px 1px 2px 0px #1018280d;
   margin-bottom: 18px;
+
+  input {
+    appearance: none;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+  }
+
+  img {
+    padding-left: 10px;
+  }
 
   @media screen and (max-width: 768px) {
     width: 348px;
@@ -102,7 +130,8 @@ export const Input = styled.input`
 
 export const CustomButton = styled(Button)`
   display; flex;
-  width: 320px;
+  width: 314px;
+  font-size: 16px;
   height: 44px;
   border-radius: 12px;
   border: 1px solid #0F2FB8;
@@ -114,17 +143,26 @@ export const CustomButton = styled(Button)`
 
   @media screen and (max-width: 768px) {
     width: 348px;
-    font-size: 16px;
   }
 `;
 
 export const CopyRightBox = styled(Typography)`
   display: flex;
   flex-direction: row;
-  color: #4d5761;
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    display: flex;
+    margin: auto;
+  }
+`;
+
+export const CopyRight = styled(Typography)`
+  color: #4d5761;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: auto;
+    font-size: 14px;
   }
 `;

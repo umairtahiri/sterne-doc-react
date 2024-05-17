@@ -10,8 +10,14 @@ export const AppBar = () => {
   return (
     <Header>
       <NavBar>
-        <Grid container direction="row" justifyContent="space-between">
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+        >
           <LogoImage alt="CompanyLogo" src={logo} />
+
           <Grid item>
             <Stack direction="row" columnGap={4} sx={{ cursor: "pointer" }}>
               <Link to="/#">
@@ -28,6 +34,7 @@ export const AppBar = () => {
               </Link>
             </Stack>
           </Grid>
+
           <CustomButton>Angebot einholen</CustomButton>
         </Grid>
       </NavBar>

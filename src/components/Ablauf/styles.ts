@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 
 export const AblaufSection = styled(Box)`
-  padding: 120px 160px;
+  padding: 120px 140px;
 
   @media (max-width: 1200px) {
     padding: 24px;
@@ -25,7 +25,25 @@ export const Title = styled(Typography)`
   line-height: 72px;
   letter-spacing: -0.02em;
   text-align: center;
-  color: @0a1f7b;
+  color: #0a1f7b;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
+`;
+
+export const ItemContainer = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ItemTitle = styled(Typography)`
@@ -34,11 +52,17 @@ export const ItemTitle = styled(Typography)`
   line-height: 44.8px;
   text-align: left;
   color: #1f2a37;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 24px 0px;
+  }
 `;
 
 export const Description = styled(Typography)`
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   text-align: right
   color: #6C737F;
@@ -49,7 +73,6 @@ export const Description = styled(Typography)`
 export const CountImage = styled(Img)`
   @media screen and (max-width: 768px) {
     height: auto;
-    margin-bottom: 20px;
   }
 `;
 

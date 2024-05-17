@@ -12,6 +12,7 @@ import {
   BoxLeft,
   BoxRight,
   PhoneImage,
+  ItemContainer,
   VorteileContainer,
 } from "./styles";
 
@@ -73,13 +74,13 @@ const VorteileItem = ({
   markImg,
 }: VorteileItemPropTypes) => {
   return (
-    <Stack direction="row">
+    <ItemContainer>
       <Img src={markImg} alt="mark" />
       <Box>
         <ItemTitle>{title}</ItemTitle>
         <Description>{description}</Description>
       </Box>
-    </Stack>
+    </ItemContainer>
   );
 };
 
@@ -92,6 +93,7 @@ const Vorteile = () => {
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <PhoneImage src={Phone} alt="iPhone15" />
           </Grid>
+
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <BoxLeft>
               {vorteileItemsLeft.map((item, index) => (

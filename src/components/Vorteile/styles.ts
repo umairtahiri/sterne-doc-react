@@ -16,11 +16,13 @@ export const VorteileSection = styled(Box)`
 
 export const VorteileContainer = styled(Box)``;
 export const BoxLeft = styled(Box)`
+  padding-top: 24px;
   @media screen and (max-width: 768px) {
   }
 `;
 
 export const BoxRight = styled(Box)`
+  padding-top: 24px;
   @media screen and (max-width: 768px) {
   }
 `;
@@ -43,6 +45,7 @@ export const ItemTitle = styled(Typography)`
   font-size: 20px;
   color: #384250;
   font-weight: bold;
+  color: #384250;
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
@@ -54,6 +57,8 @@ export const ItemTitle = styled(Typography)`
 export const Description = styled(Typography)`
   padding: 20px 0px;
   font-size: 16px;
+  color: #6c737f;
+
   margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
@@ -63,9 +68,34 @@ export const Description = styled(Typography)`
   }
 `;
 
-export const PhoneImage = styled(Img)`
+export const ItemContainer = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  color: #384250;
+  font-weight: bold;
+
   @media screen and (max-width: 768px) {
-    width: 315.8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+`;
+export const MarkImage = styled(Img)`
+  @media screen and (max-width: 768px) {
+    opacity: 0px;
+  }
+`;
+
+export const PhoneImage = styled(Img)`
+  width: 100%;
+  height: 621px;
+
+  @media screen and (max-width: 768px) {
+    magin: auto;
+    width: 100%;
     height: 621.46px;
     left: 16.1px;
     gap: 0px;
