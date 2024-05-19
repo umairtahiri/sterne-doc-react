@@ -19,8 +19,7 @@ export const InfoBox = styled(Box)`
   color: #0a1f7b;
 
   @media screen and (max-width: 768px) {
-    width: 348px;
-    padding: 24px;
+    margin: 24px;
   }
 `;
 

@@ -11,7 +11,7 @@ export const Header = styled(Box)`
   z-index: 3;
   background: #ffffff;
 
-  @media screen and (max-width: 1026px) {
+  @media screen and (max-width: 998px) {
     display: none;
   }
 `;

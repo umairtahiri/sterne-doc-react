@@ -36,7 +36,6 @@ export const Title = styled(Typography)`
 export const ItemContainer = styled(Box)`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: flex-start;
   gap: 20px;
 

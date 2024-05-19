@@ -12,7 +12,6 @@ import {
   WelcomeNote,
   ImageFrame,
   IconImage,
-  ImageContainer,
 } from "./styles";
 
 type RemoveItemPropTypes = {
@@ -51,35 +50,30 @@ const RemoveItem = ({ itemDetail, iconImg }: RemoveItemPropTypes) => {
 
 const RemoveNegative = () => {
   return (
-    <ImageContainer>
-      <RemoveNegativeSection>
-        <Stack
-          flexDirection="row"
-          justifyContent="space-between"
-          flexWrap="wrap"
-          alignContent="center"
-        >
-          <Grid container xs={12} sm={12} md={12} lg={6}>
-            <Title>Connect to Remove Negative Review</Title>
-            <WelcomeNote>
-              Welcome to Healthcare Removal Star Review, your premier
-              destination for cutting-edge healthcare removal services and
-              stellar customer experiences. We're dedicated to providing you
-              with top-notch solutions for all your healthcare removal.
-            </WelcomeNote>
-            {removeItems.map((item) => (
-              <RemoveItem
-                itemDetail={item?.itemDetail}
-                iconImg={item.iconImg}
-              />
-            ))}
-          </Grid>
-          <Grid container xs={12} sm={12} md={12} lg={6}>
-            <ImageFrame src={Frame207} height={550} alt="Star" />
-          </Grid>
-        </Stack>
-      </RemoveNegativeSection>
-    </ImageContainer>
+    <RemoveNegativeSection>
+      <Stack
+        flexDirection="row"
+        justifyContent="space-between"
+        flexWrap="wrap"
+        alignContent="center"
+      >
+        <Grid container xs={12} sm={12} md={12} lg={6}>
+          <Title>Connect to Remove Negative Review</Title>
+          <WelcomeNote>
+            Welcome to Healthcare Removal Star Review, your premier destination
+            for cutting-edge healthcare removal services and stellar customer
+            experiences. We're dedicated to providing you with top-notch
+            solutions for all your healthcare removal.
+          </WelcomeNote>
+          {removeItems.map((item) => (
+            <RemoveItem itemDetail={item?.itemDetail} iconImg={item.iconImg} />
+          ))}
+        </Grid>
+        <Grid container xs={12} sm={12} md={12} lg={6}>
+          <ImageFrame src={Frame207} height={550} alt="Star" />
+        </Grid>
+      </Stack>
+    </RemoveNegativeSection>
   );
 };
 

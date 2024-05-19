@@ -22,13 +22,14 @@ export const FooterBox = styled(Box)`
 export const Description = styled(Typography)`
   color: #4d5761;
   margin-bottom: 40px;
+  font-size: 16px;
 
   @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 14px;
-    padding: 24px;
+    padding: 32px 0px 24px 0px;
   }
 `;
 
@@ -55,7 +56,7 @@ export const Title = styled(Typography)`
 `;
 
 export const LogoImage = styled(Img)`
-  width: 180px;
+  width: 200px;
   height: 45px;
   margin-bottom: 32px;
 

@@ -4,23 +4,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Vector from "../../assets/content-section.svg";
 
-export const ImageContainer = styled(Box)`
-  width: 100%;
-  height: auto;
+export const RemoveNegativeSection = styled(Box)`
   background-image: url("${Vector}");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
-  }
-`;
-
-export const RemoveNegativeSection = styled(Box)`
   font-family: Macan;
   padding: 120px 160px;
 
