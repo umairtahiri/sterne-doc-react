@@ -9,6 +9,10 @@ export const MessageSection = styled(Box)`
   @media screen and (max-width: 768px) {
     padding: 24px;
   }
+
+  @media screen and (max-width: 1100px) {
+    padding: 16px 80px;
+  }
 `;
 
 export const InfoBox = styled(Box)`

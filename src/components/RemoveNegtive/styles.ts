@@ -14,6 +14,10 @@ export const RemoveNegativeSection = styled(Box)`
   @media screen and (max-width: 768px) {
     padding: 24px;
   }
+
+  @media screen and (max-width: 1100px) {
+    padding: 80px;
+  }
 `;
 
 export const Title = styled(Typography)`
@@ -34,9 +38,6 @@ export const WelcomeNote = styled(Typography)`
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 24px;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const ItemDetail = styled(Typography)`

@@ -26,6 +26,10 @@ export const NavBar = styled(Box)`
   font-size: 16px;
   gap: 10px;
 
+  @media screen and (max-width: 1100px) {
+    padding: 16px 80px;
+  }
+
   a {
     text-decoration: none;
   }
@@ -38,7 +42,7 @@ export const NavBar = styled(Box)`
 export const LogoImage = styled(Img)`
   display: flex;
   justify-content: center;
-align-items: center
+  align-items: center
   width: 202px;
   height: 45px;
 

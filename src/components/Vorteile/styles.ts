@@ -12,6 +12,10 @@ export const VorteileSection = styled(Box)`
     display: flex;
     flex-direction: column;
   }
+
+  @media screen and (max-width: 1100px) {
+    padding: 40px 80px;
+  }
 `;
 
 export const VorteileContainer = styled(Box)``;

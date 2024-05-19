@@ -1,16 +1,17 @@
 import React from "react";
-import { Stack, Box, Grid } from "@mui/material";
+import Form from "../Form";
+import Stack from "@mui/material/Stack";
+import Grid from "@mui/material/Grid";
+
 import Frame1811 from "../../assets/Badge.svg";
 import Frame1812 from "../../assets/Hand.svg";
 import Frame1813 from "../../assets/Bag.svg";
-import Frame207 from "../../assets/Frame207.svg";
 
 import {
   RemoveNegativeSection,
   Title,
   ItemDetail,
   WelcomeNote,
-  ImageFrame,
   IconImage,
 } from "./styles";
 
@@ -51,13 +52,8 @@ const RemoveItem = ({ itemDetail, iconImg }: RemoveItemPropTypes) => {
 const RemoveNegative = () => {
   return (
     <RemoveNegativeSection>
-      <Stack
-        flexDirection="row"
-        justifyContent="space-between"
-        flexWrap="wrap"
-        alignContent="center"
-      >
-        <Grid container xs={12} sm={12} md={12} lg={6}>
+      <Grid container columnSpacing={4}>
+        <Grid item xs={12} sm={12} md={6}>
           <Title>Connect to Remove Negative Review</Title>
           <WelcomeNote>
             Welcome to Healthcare Removal Star Review, your premier destination
@@ -69,10 +65,10 @@ const RemoveNegative = () => {
             <RemoveItem itemDetail={item?.itemDetail} iconImg={item.iconImg} />
           ))}
         </Grid>
-        <Grid container xs={12} sm={12} md={12} lg={6}>
-          <ImageFrame src={Frame207} height={550} alt="Star" />
+        <Grid item xs={12} sm={12} md={6}>
+          <Form />
         </Grid>
-      </Stack>
+      </Grid>
     </RemoveNegativeSection>
   );
 };
