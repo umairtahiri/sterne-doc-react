@@ -6,56 +6,23 @@ import { Img } from "react-image";
 
 import Ellipse from "../../assets/Ellipse.svg";
 
-export const ImageContainer = styled.div`
-  background-image: url(${Ellipse.src});
-  background-repeat: repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-
-  @media screen and (max-width: 768px) {
-    position: relative;
-    top: 590px;
-    width: 100%;
-    height: 100px;
-  }
-`;
 export const BannerSection = styled(Box)`
   font-family: Macan;
-  height: 746px;
-  padding: 64px 24px;
+  height: auto;
+
   @media screen and (max-width: 768px) {
-    padding: 24px;
   }
 `;
 
-export const BannerBox = styled(Box)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const Container = styled(Box)`
-  position: absolute;
-  top: 180px;
-  z-index: 1;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
+export const Container = styled(Box)``;
 
 export const ContainerGrid = styled(Box)`
-  width: 819px;
-  margin: auto;
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 100px 240px 40px 240px;
+  }
+
+  @media screen and (max-width: 1080px) {
+    padding: 80px 10px 0px 10px;
   }
 `;
 
@@ -67,18 +34,20 @@ export const Title = styled(Typography)`
   text-align: center;
   letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   color: #0a1f7b;
 
   @media screen and (max-width: 768px) {
     font-size: 48px;
+    font-weight: 600;
     line-height: 57.6px;
     letter-spacing: -0.02em;
+    text-align: center;
   }
 `;
 
 export const Description = styled(Typography)`
-  padding: 20px 0px;
+  padding-top: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -103,29 +72,52 @@ export const CustomButton = styled(Button)`
   }
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 1px;
+    margin-bottom: 34px;
   }
 `;
 
-export const BannerImage = styled(Img)`
-  width: 100%;
+export const BannerImage = styled(Box)`
+  background-image: url(${Ellipse});
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  img {
+    display: block;
+    margin: auto;
+  }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    background-size: contain;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 1160px) {
+    height: 250px;
+    background-size: conver;
+
+    img {
+      width: 100%;
+    }
   }
 `;
 
-export const UnionImage = styled(Img)`
+export const UnionImage = styled(Box)`
   position: absolute;
   top: 120px;
-  width: 100%;
-  object-fit: contain;
+  z-index: -1;
+
+  img {
+    width: 100%;
+  }
 
   @media screen and (max-width: 768px) {
     position: absolute;
-    top: 50px;
-    width: 100%;
-    object-fit: contain;
-    width: 100%;
+    top: 100px;
+
+    img {
+      width: 100%;
+    }
   }
 `;
