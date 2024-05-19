@@ -78,7 +78,6 @@ export const CustomButton = styled(Button)`
 
 export const BannerImage = styled(Box)`
   background-image: url(${Ellipse});
-  background-repeat: repeat;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -95,7 +94,7 @@ export const BannerImage = styled(Box)`
 
   @media screen and (max-width: 1160px) {
     height: 250px;
-    background-size: conver;
+    background-size: cover;
 
     img {
       width: 100%;

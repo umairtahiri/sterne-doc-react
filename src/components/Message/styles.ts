@@ -17,10 +17,6 @@ export const InfoBox = styled(Box)`
   border: 1px solid #8797db;
   background: #dfe3f6;
   color: #0a1f7b;
-
-  @media screen and (max-width: 768px) {
-    margin: 24px;
-  }
 `;
 
 export const Title = styled(Typography)`
@@ -34,6 +30,7 @@ export const Title = styled(Typography)`
   @media screen and (max-width: 768px) {
     line-height: 24px;
     margin-bottom: 20px;
+    word-break: break-all;
   }
 `;
 
@@ -41,7 +38,7 @@ export const Description = styled(Typography)`
   font-family: Macan;
   font-size: 16px;
   line-height: 24px;
-
+  word-break: break-all;
   gap: 24px;
   padding: 10px 0px 20px 0px;
   margin-bottom: 20px;

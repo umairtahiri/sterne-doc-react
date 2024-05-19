@@ -78,5 +78,6 @@ export const CountImage = styled(Img)`
 export const StarImage = styled(Img)`
   @media screen and (max-width: 768px) {
     width: 100%;
+    height: auto;
   }
 `;

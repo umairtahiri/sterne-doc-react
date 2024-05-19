@@ -16,21 +16,24 @@ export const Content = styled(Box)`
       background: #0f2fb8;
     }
   }
+
   a {
     display: block;
     text-decoration: none;
     border-bottom: 1px solid #fff;
     text-align: right;
+
     &:hover {
       color: #5a9e87;
     }
+
     h5 {
-      font-family: Inter;
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
       color: #384250;
     }
+
     &:last-child {
       border-bottom: none;
     }

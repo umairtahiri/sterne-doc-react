@@ -60,35 +60,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-/*
-<Grid
-        container
-        xs={12}
-        sm={12}
-        md={12}
-        lg={12}
-        justifyContent="space-between"
-        columnGap={2}
-      >
-        <Grid item xs={12} sm={12} md={12} lg={12}>
-          <UnionImage>
-            <Img src={UnionImg} alt="UnionImg" />
-          </UnionImage>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
-          <Container>
-            {bannerItems.map((item) => (
-              <BannerItem title={item?.title} description={item?.description} />
-            ))}
-            <CustomButton>Angebot einholen</CustomButton>
-          </Container>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
-          <BannerImage>
-            <Img src={BannerImg} alt="BannerImg" />
-          </BannerImage>
-        </Grid>
-      </Grid>
-
-*/

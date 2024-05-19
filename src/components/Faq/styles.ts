@@ -8,7 +8,7 @@ export const FaqContainer = styled(Box)`
   flex-direction: column;
   gap: 20px;
   background: linear-gradient(0deg, #ffffff 0%, #e0e4f3 100%);
-  padding: 120px 10px 120px 10px;
+  padding: 120px 24px 120px 24px;
   height: auto;
 
   & .container {
@@ -22,7 +22,7 @@ export const FaqContainer = styled(Box)`
 
   @media screen and (max-width: 998px) {
     .container {
-      width: 396px;
+      width: fit-content;
       order-radius: 16px;
       opacity: 0px;
       color: #ffffff;

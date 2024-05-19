@@ -61,6 +61,7 @@ export const IconImage = styled(Img)`
 export const ImageFrame = styled(Img)`
   @media screen and (max-width: 768px) {
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
   }
 `;

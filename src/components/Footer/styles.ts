@@ -15,7 +15,7 @@ export const FooterSection = styled(Box)`
 
 export const FooterBox = styled(Box)`
   @media screen and (max-width: 768px) {
-    padding: 24px;
+    padding: 0;
   }
 `;
 
@@ -101,7 +101,7 @@ export const IconImage = styled(Img)`
 
 export const InputBox = styled(Box)`
   display: flex;
-  width: 314px;
+  max-width: 314px;
   height: 44px;
   font-size: 16px;
   border-radius: 80px;
@@ -124,14 +124,15 @@ export const InputBox = styled(Box)`
   }
 
   @media screen and (max-width: 768px) {
-    width: 348px;
+    max-width: 100%;
+    width: 100%;
     font-size: 16px;
   }
 `;
 
 export const CustomButton = styled(Button)`
   display; flex;
-  width: 314px;
+  max-width: 314px;
   font-size: 16px;
   height: 44px;
   border-radius: 12px;
@@ -143,7 +144,8 @@ export const CustomButton = styled(Button)`
   }
 
   @media screen and (max-width: 768px) {
-    width: 348px;
+    max-width: 100%;
+    width: 100%;
   }
 `;
 
