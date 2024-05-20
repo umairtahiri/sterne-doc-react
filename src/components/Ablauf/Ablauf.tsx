@@ -57,7 +57,7 @@ const AblaufItem = ({ title, description, countImg }: AblaufItemPropTypes) => {
 
 const Ablauf = () => {
   return (
-    <AblaufSection>
+    <AblaufSection id="ablauf">
       <AblaufContainer>
         <Title>Ablauf</Title>
         <Grid

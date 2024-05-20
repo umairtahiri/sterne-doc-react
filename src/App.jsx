@@ -9,6 +9,7 @@ import Faq from "./components/Faq/Faq";
 import Message from "./components/Message/Message";
 import Footer from "./components/Footer/Footer";
 import { Routes, Route } from "react-router-dom";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           }
         />
       </Routes>
+      <Route path="/form" element={<Form />} />
       <Footer />
     </>
   );

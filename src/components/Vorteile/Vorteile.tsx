@@ -86,7 +86,7 @@ const VorteileItem = ({
 
 const Vorteile = () => {
   return (
-    <VorteileSection>
+    <VorteileSection id="vorteile">
       <Title>Vorteile</Title>
       <VorteileContainer>
         <Grid container columnSpacing={2}>
