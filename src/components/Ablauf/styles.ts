@@ -6,8 +6,16 @@ import Box from "@mui/material/Box";
 export const AblaufSection = styled(Box)`
   padding: 120px 140px;
 
-  @media (max-width: 1200px) {
+  @media screen and (max-width: 767px) {
     padding: 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+    padding: 24px;
+  }
+
+  @media screen and (min-width: 1081px) and (max-width: 1100px) {
+    padding: 40px;
   }
 `;
 
@@ -75,9 +83,19 @@ export const CountImage = styled(Img)`
   }
 `;
 
-export const StarImage = styled(Img)`
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
+export const StarImage = styled(Box)`
+  height: auto;
+
+  @media screen and (max-width: 504px) {
+    img {
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 346px) {
+    padding: 2px;
+    img {
+      width: 250px;
+    }
   }
 `;

@@ -11,12 +11,20 @@ export const RemoveNegativeSection = styled(Box)`
   font-family: Macan;
   padding: 120px 160px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 454px) {
     padding: 24px;
   }
 
-  @media screen and (max-width: 1100px) {
-    padding: 80px;
+  @media screen and (min-width: 455px) and (max-width: 767px) {
+    padding: 64px 44px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+    padding: 88px 64px;
+  }
+
+  @media screen and (min-width: 1081px) and (max-width: 1100px) {
+    padding: 84px;
   }
 `;
 
@@ -27,10 +35,6 @@ export const Title = styled(Typography)`
   line-height: 67.2px;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 36px;
-  }
 `;
 
 export const WelcomeNote = styled(Typography)`

@@ -79,8 +79,9 @@ const Ablauf = () => {
               />
             ))}
           </Grid>
-
-          <StarImage src={Star} height={450} alt="Star" />
+          <StarImage>
+            <img src={Star} width={450} alt="Star" />
+          </StarImage>
         </Grid>
       </AblaufContainer>
     </AblaufSection>

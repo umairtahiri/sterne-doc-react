@@ -16,8 +16,11 @@ export const FormContainer = styled(Box)`
   align-items: flex-start;
   box-shadow: 0px 24px 32px 0px rgba(0, 0, 0, 0.12);
 
-  @media (max-width: 769px) {
-    width: unset;
+  @media screen and (max-width: 1100px) {
+    padding: 24px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    padding: 88px 24px;
   }
 `;
 
@@ -48,5 +51,9 @@ export const CustomButton = styled(Button)`
 
   &:hover {
     background: #0f2fd8;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
   }
 `;

@@ -127,10 +127,8 @@ export const InputBox = styled(Box)`
     padding-left: 10px;
   }
 
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
+  @media screen and (max-width: 456px) {
     width: 100%;
-    font-size: 16px;
   }
 `;
 
@@ -147,10 +145,11 @@ export const CustomButton = styled(Button)`
     background:  #0f2fd8;
   }
 
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
+  @media screen and (min-width: 318px) {
+   
     width: 100%;
   }
+
 `;
 
 export const CopyRightBox = styled(Typography)`

@@ -52,8 +52,8 @@ const RemoveItem = ({ itemDetail, iconImg }: RemoveItemPropTypes) => {
 const RemoveNegative = () => {
   return (
     <RemoveNegativeSection>
-      <Grid container columnSpacing={4}>
-        <Grid item xs={12} sm={12} md={6}>
+      <Grid container columnSpacing={4} xs={12} sm={12} md={12} lg={12}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <Title>Connect to Remove Negative Review</Title>
           <WelcomeNote>
             Welcome to Healthcare Removal Star Review, your premier destination
@@ -65,7 +65,7 @@ const RemoveNegative = () => {
             <RemoveItem itemDetail={item?.itemDetail} iconImg={item.iconImg} />
           ))}
         </Grid>
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6} justifyContent="center">
           <Form />
         </Grid>
       </Grid>
