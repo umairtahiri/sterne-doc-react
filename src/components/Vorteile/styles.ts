@@ -7,28 +7,25 @@ export const VorteileSection = styled(Box)`
   padding: 80px 160px;
   font-family: Macan;
 
+  @media screen and (max-width: 1100px) {
+    padding: 40px 80px;
+  }
+
   @media screen and (max-width: 768px) {
     padding: 24px;
     display: flex;
     flex-direction: column;
   }
-
-  @media screen and (max-width: 1100px) {
-    padding: 40px 80px;
-  }
 `;
 
 export const VorteileContainer = styled(Box)``;
+
 export const BoxLeft = styled(Box)`
   padding-top: 24px;
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const BoxRight = styled(Box)`
   padding-top: 24px;
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const Title = styled(Typography)`

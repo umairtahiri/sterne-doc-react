@@ -21,10 +21,6 @@ export const AblaufSection = styled(Box)`
 
 export const AblaufContainer = styled(Box)`
   font-family: Macan;
-
-  @media (max-width: 1200px) {
-    padding: 24px;
-  }
 `;
 
 export const Title = styled(Typography)`

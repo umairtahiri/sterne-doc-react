@@ -6,12 +6,12 @@ import Box from "@mui/material/Box";
 export const MessageSection = styled(Box)`
   padding: 16px 160px;
 
-  @media screen and (max-width: 768px) {
-    padding: 24px;
-  }
-
   @media screen and (max-width: 1100px) {
     padding: 16px 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
   }
 `;
 

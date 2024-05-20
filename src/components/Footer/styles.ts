@@ -8,12 +8,12 @@ export const FooterSection = styled(Box)`
   padding: 16px 160px;
   font-family: Macan;
 
-  @media screen and (max-width: 768px) {
-    padding: 24px;
-  }
-
   @media screen and (max-width: 1100px) {
     padding: 16px 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
   }
 `;
 
