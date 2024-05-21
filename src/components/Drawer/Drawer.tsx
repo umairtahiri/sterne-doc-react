@@ -39,7 +39,7 @@ export default function OptionsDrawer({
               <Typography variant="h5">Vorteile</Typography>
             </Item>
           </Link>
-          <Link to="/#Angeboteinholen">
+          <Link to="#submit-request">
             <Box>
               <Button variant="contained" size="large">
                 Angebot einholen

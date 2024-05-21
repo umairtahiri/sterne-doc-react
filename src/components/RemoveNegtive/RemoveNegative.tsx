@@ -51,7 +51,7 @@ const RemoveItem = ({ itemDetail, iconImg }: RemoveItemPropTypes) => {
 
 const RemoveNegative = () => {
   return (
-    <RemoveNegativeSection>
+    <RemoveNegativeSection id="submit-request">
       <Grid container columnSpacing={4} xs={12} sm={12} md={12} lg={12}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Title>Connect to Remove Negative Review</Title>

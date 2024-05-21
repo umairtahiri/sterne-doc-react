@@ -2,16 +2,12 @@ import styled from "styled-components";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { Img } from "react-image";
 
 import Ellipse from "../../assets/Ellipse.svg";
 
 export const BannerSection = styled(Box)`
   font-family: Macan;
   height: auto;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const Container = styled(Box)``;

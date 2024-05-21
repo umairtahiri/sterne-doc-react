@@ -24,7 +24,6 @@ export const InfoBox = styled(Box)`
 `;
 
 export const Title = styled(Typography)`
-  font-family: Macan;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -39,13 +38,10 @@ export const Title = styled(Typography)`
 `;
 
 export const Description = styled(Typography)`
-  font-family: Macan;
   font-size: 16px;
   line-height: 24px;
   word-break: break-all;
-  gap: 24px;
-  padding: 10px 0px 20px 0px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 `;
 
 export const IconImage = styled(Img)`

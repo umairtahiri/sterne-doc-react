@@ -48,7 +48,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={formik.handleSubmit} style={{ width: "100%" }}>
-      <FormContainer id="form">
+      <FormContainer>
         <Row>
           <FormLabel>Name des Unternehmens:</FormLabel>
           <StyledInput fullWidth />

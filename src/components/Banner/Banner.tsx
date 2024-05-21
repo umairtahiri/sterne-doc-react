@@ -1,5 +1,4 @@
 import React from "react";
-import Stack from "@mui/material/Stack";
 import BannerImg from "../../assets/Banner.svg";
 import UnionImg from "../../assets/Union.svg";
 import { Img } from "react-image";
@@ -27,17 +26,6 @@ const bannerItems = [
   },
 ];
 
-const BannerItem = ({ title, description }: BannerItemPropTypes) => {
-  return (
-    <Stack>
-      <ContainerGrid>
-        <Title>{title}</Title>
-        <Description>{description}</Description>
-      </ContainerGrid>
-    </Stack>
-  );
-};
-
 const Banner = () => {
   return (
     <>
@@ -46,10 +34,15 @@ const Banner = () => {
           <Img src={UnionImg} alt="UnionImg" />
         </UnionImage>
         <Container>
-          {bannerItems.map((item) => (
-            <BannerItem title={item?.title} description={item?.description} />
-          ))}
-          <CustomButton>Angebot einholen</CustomButton>
+          <ContainerGrid>
+            <Title>Negative Bewertungen Schaden Ihren RUF?</Title>
+            <Description>
+              Löschen auch Sie Ihre Negative Bewertungen mit SterneDoc!
+            </Description>
+          </ContainerGrid>
+          <a href="#submit-request">
+            <CustomButton>Angebot einholen</CustomButton>
+          </a>
         </Container>
         <BannerImage>
           <Img src={BannerImg} alt="BannerImg" />

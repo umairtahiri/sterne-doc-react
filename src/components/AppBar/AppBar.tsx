@@ -63,7 +63,7 @@ export const AppBar = () => {
               </NavLink>
             </Stack>
           </Grid>
-          <a href="#form" style={{ textDecoration: "none" }}>
+          <a href="#submit-request" style={{ textDecoration: "none" }}>
             <CustomButton>Angebot einholen</CustomButton>
           </a>
         </Grid>

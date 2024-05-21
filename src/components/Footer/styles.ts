@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 export const FooterSection = styled(Box)`
   padding: 16px 160px;
   font-family: Macan;
+  padding-bottom: 24px;
 
   @media screen and (max-width: 1100px) {
     padding: 16px 80px;
@@ -39,8 +40,6 @@ export const Description = styled(Typography)`
 
 export const Links = styled(Typography)`
   color: #4d5761;
-  margin-bottom: 40px;
-  margin-right: 16px;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -113,6 +112,7 @@ export const InputBox = styled(Box)`
   border: 1px solid #e5e7eb;
   box-shadow: 0px 1px 2px 0px #1018280d;
   margin-bottom: 18px;
+  width: 100%;
 
   input {
     appearance: none;
@@ -141,15 +141,11 @@ export const CustomButton = styled(Button)`
   border: 1px solid #0F2FB8;
   color: #ffffff;
   background: #0f2fb8;
+  width: 100%;
+
   &:hover {
     background:  #0f2fd8;
   }
-
-  @media screen and (min-width: 318px) {
-   
-    width: 100%;
-  }
-
 `;
 
 export const CopyRightBox = styled(Typography)`
@@ -171,4 +167,10 @@ export const CopyRight = styled(Typography)`
     margin: auto;
     font-size: 14px;
   }
+`;
+
+export const Border = styled.div`
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+  width: 100%;
 `;

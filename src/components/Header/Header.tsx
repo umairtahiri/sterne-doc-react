@@ -2,7 +2,6 @@ import Box from "@mui/material/Box";
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import { HeaderContainer, NavItemsContainer } from "./styles";
 import CompanyLogo from "../../assets/Logo.svg";
 import { Link } from "react-router-dom";
@@ -10,8 +9,6 @@ import { Img } from "react-image";
 import Button from "@mui/material/Button";
 
 export const Header = () => {
-  // const { width } = useWindowSize();
-
   return (
     <HeaderContainer>
       <Stack
@@ -51,7 +48,7 @@ export const Header = () => {
                 </Typography>
               </Box>
             </Link>
-            <Link to="/#Angeboteinholen">
+            <Link to="#submit-request">
               <Box>
                 <Button variant="contained" size="large">
                   Angebot einholen

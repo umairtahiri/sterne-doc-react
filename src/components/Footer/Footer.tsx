@@ -1,6 +1,7 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
+
 import { Img } from "react-image";
 import logo from "../../assets/logo.svg";
 import IconPhone from "../../assets/phone-Icon.svg";
@@ -20,6 +21,7 @@ import {
   CustomButton,
   CopyRightBox,
   Links,
+  Border,
 } from "./styles";
 
 const Banner = () => {
@@ -52,7 +54,16 @@ const Banner = () => {
                 </Stack>
               </Grid>
 
-              <Grid item xs={12} sm={12} md={12} lg={7}>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={7}
+                display="flex"
+                flexDirection="column"
+                alignItems="flex-end"
+              >
                 <Title>Subscribe the Newsletter</Title>
                 <InputBox>
                   <Img src={IconEmail} width={16} alt="IconEmail" />
@@ -64,21 +75,16 @@ const Banner = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          container
-          xs={12}
-          sm={12}
-          md={12}
-          justifyContent="space-between"
-          marginTop={10}
-          borderTop={1}
-        >
+        <Grid container xs={12} sm={12} md={12} justifyContent="space-between">
+          <Border />
           <CopyRight>© 2024 Sternedoc. All rights reserved.</CopyRight>
 
           <CopyRightBox justifyContent="space-between">
-            <Links>Terms</Links>
-            <Links>Privacy</Links>
-            <Links>Cookies</Links>
+            <Stack columnGap={3} flexDirection="row">
+              <Links>Terms</Links>
+              <Links>Privacy</Links>
+              <Links>Cookies</Links>
+            </Stack>
           </CopyRightBox>
         </Grid>
       </FooterBox>
