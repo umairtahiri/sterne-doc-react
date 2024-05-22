@@ -12,7 +12,10 @@ const CollapsedHeader = () => {
 
   return (
     <HeaderContainer>
-      <Logo src={CompanyLogo} alt="logo" width={150} />
+      <a href="/#">
+        <Logo src={CompanyLogo} alt="logo" width={150} />
+      </a>
+
       <Menu onClick={toggleDrawer}>
         <Stack direction="row" gap={12}>
           <Img src={menuIcon} alt="menu icon" />

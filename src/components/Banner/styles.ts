@@ -96,6 +96,10 @@ export const BannerImage = styled(Box)`
       width: 100%;
     }
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 454px) {
+    background-size: contain;
+  }
 `;
 
 export const UnionImage = styled(Box)`

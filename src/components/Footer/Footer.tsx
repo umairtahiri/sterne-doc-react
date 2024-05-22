@@ -62,7 +62,6 @@ const Banner = () => {
                 lg={7}
                 display="flex"
                 flexDirection="column"
-                alignItems="flex-end"
               >
                 <Title>Subscribe the Newsletter</Title>
                 <InputBox>

@@ -12,7 +12,7 @@ export const VorteileSection = styled(Box)`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 24px;
+    padding: 80px 24px 24px 24px;
     display: flex;
     flex-direction: column;
   }
@@ -72,7 +72,7 @@ export const Description = styled(Typography)`
 export const ItemContainer = styled(Box)`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
   align-items: flex-start;
   font-size: 20px;
   color: #384250;
@@ -103,35 +103,3 @@ export const PhoneImage = styled(Img)`
     opacity: 0px;
   }
 `;
-
-/*
-
-
-export const ItemTitle = styled(Typography)<{ orientation: string }>`
-  font-size: 20px;
-  color: #384250;
-  font-weight: bold;
-  text-align: ${(props) => (props?.orientation === "right" ? "left" : "right")};
-
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-  }
-`;
-
-export const Description = styled(Typography)<{ orientation: string }>`
-  padding: 20px 0px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-align: ${(props) => (props?.orientation === "right" ? "left" : "right")};
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-`;
-
-
-*/

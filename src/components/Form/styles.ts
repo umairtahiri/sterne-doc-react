@@ -17,10 +17,17 @@ export const FormContainer = styled(Box)`
   box-shadow: 0px 24px 32px 0px rgba(0, 0, 0, 0.12);
 
   @media screen and (max-width: 1100px) {
+    width: 95%;
     padding: 24px;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
     padding: 88px 24px;
+  }
+
+  @media screen and (min-width: 455px) and (max-width: 767px) {
+    width: 95%;
+    padding: 120px 24px;
   }
 `;
 

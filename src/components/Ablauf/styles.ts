@@ -7,7 +7,7 @@ export const AblaufSection = styled(Box)`
   padding: 120px 140px;
 
   @media screen and (max-width: 767px) {
-    padding: 24px;
+    padding: 80px 24px 24px 24px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1080px) {

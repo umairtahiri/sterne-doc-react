@@ -24,28 +24,29 @@ export default function OptionsDrawer({
         onKeyDown={toggleDrawer}
       >
         <Content>
-          <Link to="/">
+          <a href="/#">
             <Item>
               <Typography variant="h5">Home</Typography>
             </Item>
-          </Link>
-          <Link to="/#">
+          </a>
+
+          <a href="#ablauf">
             <Item>
               <Typography variant="h5">Ablauf</Typography>
             </Item>
-          </Link>
-          <Link to="/vorteile">
+          </a>
+
+          <a href="#vorteile">
             <Item>
               <Typography variant="h5">Vorteile</Typography>
             </Item>
-          </Link>
-          <Link to="#submit-request">
-            <Box>
-              <Button variant="contained" size="large">
-                Angebot einholen
-              </Button>
-            </Box>
-          </Link>
+          </a>
+
+          <a href="#submit-request" style={{ textDecoration: "none" }}>
+            <Button variant="contained" size="large">
+              Angebot einholen
+            </Button>
+          </a>
         </Content>
       </Box>
     </Drawer>

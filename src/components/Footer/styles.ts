@@ -129,6 +129,7 @@ export const InputBox = styled(Box)`
 
   @media screen and (max-width: 456px) {
     width: 100%;
+    display: flex;
   }
 `;
 
@@ -142,6 +143,7 @@ export const CustomButton = styled(Button)`
   color: #ffffff;
   background: #0f2fb8;
   width: 100%;
+  margin-bottom: 12px;
 
   &:hover {
     background:  #0f2fd8;
