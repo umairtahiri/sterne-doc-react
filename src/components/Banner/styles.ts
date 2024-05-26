@@ -10,7 +10,13 @@ export const BannerSection = styled(Box)`
   height: auto;
 `;
 
-export const Container = styled(Box)``;
+export const Container = styled(Box)`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const ContainerGrid = styled(Box)`
   @media screen and (min-width: 768px) {
@@ -52,19 +58,25 @@ export const Description = styled(Typography)`
   @media screen and (max-width: 768px) {
     padding: 24px;
   }
+  @media screen and (max-width: 1080px) {
+    padding: 24px;
+  }
 `;
 
 export const CustomButton = styled(Button)`
-  display: block;
-  margin: auto;
   width: 173px;
   height: 44px;
   border-radius: 12px;
-  margin-bottom: 32px;
   color: #ffffff;
+  text-decoration: none;
   background: #0f2fb8;
+  margin-bottom: 32px;
   &:hover {
     background: #0f2fd8;
+  }
+
+  Link {
+    text-decoration: none;
   }
 
   @media screen and (max-width: 768px) {

@@ -51,9 +51,15 @@ export const FaqAccordion = styled(Accordion)`
     font-size: 16px;
     font-weight: bold;
 
+    @media screen and (max-width: 1080px) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: auto;
+    }
+
     & .answer {
       width: 100%;
-      color: red;
       opacity: 0;
       transition: opacity 0.3s ease;
       box-shadow: 0px 16px 24px 0px #00000026;
@@ -71,5 +77,8 @@ export const FaqAccordion = styled(Accordion)`
     &.Mui-expanded .answer {
       opacity: 1;
     }
+  }
+  &.Mui-expanded .question {
+    color: #3752c4;
   }
 `;

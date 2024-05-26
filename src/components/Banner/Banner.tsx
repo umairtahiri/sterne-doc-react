@@ -2,6 +2,7 @@ import React from "react";
 import BannerImg from "../../assets/Banner.svg";
 import UnionImg from "../../assets/Union.svg";
 import { Img } from "react-image";
+import { Link } from "react-router-dom";
 
 import {
   BannerSection,
@@ -40,9 +41,9 @@ const Banner = () => {
               Löschen auch Sie Ihre Negative Bewertungen mit SterneDoc!
             </Description>
           </ContainerGrid>
-          <a href="#submit-request">
+          <Link to="#submit-request">
             <CustomButton>Angebot einholen</CustomButton>
-          </a>
+          </Link>
         </Container>
         <BannerImage>
           <Img src={BannerImg} alt="BannerImg" />
