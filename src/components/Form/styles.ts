@@ -22,12 +22,12 @@ export const FormContainer = styled(Box)`
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    padding: 88px 24px;
+    padding: 24px;
   }
 
   @media screen and (min-width: 455px) and (max-width: 767px) {
     width: 95%;
-    padding: 120px 24px;
+    padding: 24px;
   }
 `;
 
